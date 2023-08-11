@@ -58,12 +58,13 @@ public class Levenstein {
   }
 
   /**
-   * Takes in an input and changes it to an alpha-numeric version.
+   * Takes in an input and changes it to an alpha-numeric version and lowers.
    * @param input
    * @return
    */
-  public String stripString (String input){
+  public String modifyString (String input){
     input = input.replaceAll("[^a-zA-Z0-9 ]", ""); // Removing any non-alphanumeric characters
+    input = input.toLowerCase();
     return input;
   }
 
